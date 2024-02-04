@@ -1,0 +1,28 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Pushups</title>
+    <!-- Include the external script -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Daily Pushups</h1>
+    <br>
+    <h2>Today</h2>
+    <p id="pushupCount"></p>
+    <p id="totalpushupCount"></p>
+    <p id="streak"></p>
+    <button onclick="markAsDone()">Done</button>
+    <button onclick="cancelDone()">Cancel</button>
+    <p id="doneornot"></p>
+    <br>
+    <h2>Other data</h2>
+    <label for="datepicker">Select a date:</label>
+    <input type="date" id="datepicker" onchange="totalpushupsbydate()">
+    <p id="pushupsdonedate"></p>
+</body>
+</html>
